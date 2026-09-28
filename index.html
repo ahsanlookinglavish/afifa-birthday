@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Afifa</title>
+
+<!--
+  ============================================================
+  HOW THIS FILE IS ORGANIZED
+  ============================================================
+  This page has 9 sections, one after another, in this order:
+
+    1. OPENING        - the black title-card screen
+    2. REVEAL          - "Happy Birthday, Afifa Mehjabin"
+    3. SCRAPBOOK        - photo gallery
+    4. LITTLE THINGS   - small note cards
+    5. IF YOU WERE...  - poetic comparisons
+    6. LETTER           - the long birthday letter
+    7. CANDLE            - blow-out-the-candle interaction
+    8. HIDDEN NOTES     - tap-to-reveal short messages
+    9. FINAL             - the quiet closing screen
+
+  Every place YOU should edit is marked with a pencil icon in a
+  comment line just above it, saying "EDIT HERE".
+
+  You do not need to understand HTML to edit text between tags.
+  Just replace the words between the tags, and leave the tags
+  (the < > bits) exactly where they are.
+  ============================================================
+-->
+
+<!-- Fonts: Cormorant Garamond (big romantic lines), Playfair Display (small section labels), Inter (body), Caveat (handwritten accent) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@300;400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- A faint grain layer sits over the whole page. Purely visual, ignore it. -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============================================================
+     1. OPENING SCREEN
+     ============================================================ -->
+<section id="opening" class="opening">
+  <div class="opening__content">
+    <!-- ✏️ EDIT HERE: the very first line she reads. Keep it short. -->
+    <p class="opening__line">a little something, made just for my Afiiii <'3</p>
+
+    <button id="openButton" class="opening__button" type="button" onclick="document.getElementById('bgAudio').play()">
+      open this <span class="arrow">→</span>
+    </button>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. BIRTHDAY REVEAL
+     ============================================================ -->
+<section id="reveal" class="reveal">
+  <div class="reveal__content">
+    <!-- ✏️ EDIT HERE: her name. It appears exactly as typed. -->
+    <h1 class="reveal__name" data-split-text>Happiestttt Birthdayy to youu, Afifa. ♡</h1>
+
+    <!-- ✏️ EDIT HERE: the short personal intro under her name -->
+    <p class="reveal__intro"> I thought about just sending a text. Then I thought, nooooo. Everyone wishes you on your birthday and it's such a low effort thing, but I wanted to make real effort for you, I didn't just wanted to wish you simply that you'll probably forget after a while.You deserve a whole tiny corner of the internet, so I built for
+      no one else but you. So here it is darling....
+    </p>
+
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. PHOTO SCRAPBOOK
+     ============================================================
+     ✏️ EDIT HERE: Replace the image files in assets/ with your own
+     photos. Keep the file names the same (photo-1.jpg, photo-2.jpg,
+     etc.) and this section will update automatically — OR change
+     the "src" path below to point at your new file name.
+
+     You can also edit the little handwritten captions, or delete
+     the whole <figure> block for any photo you don't want to use.
+     You can have anywhere from 4 to 8 photos.
+     ============================================================ -->
+<section id="scrapbook" class="scrapbook">
+  <h2 class="section-heading">a few small memories</h2>
+
+  <div class="scrapbook__grid">
+
+    <figure class="polaroid polaroid--1">
+      <img src="assets/photo-1.jpeg" alt="Replace with your photo">
+      <!-- ✏️ EDIT HERE: caption, or delete this line for no caption -->
+      <figcaption>this one, especially</figcaption>
+    </figure>
+
+    <figure class="polaroid polaroid--2">
+      <img src="assets/photo-2.jpeg" alt="Replace with your photo">
+      <figcaption>that afternoon</figcaption>
+    </figure>
+
+    <figure class="polaroid polaroid--3">
+      <img src="assets/photo-3.jpeg" alt="Replace with your photo">
+    </figure>
+
+    <figure class="polaroid polaroid--4">
+      <img src="assets/photo-4.jpeg" alt="Replace with your photo">
+      <figcaption>you, mid-laugh</figcaption>
+    </figure>
+
+    <figure class="polaroid polaroid--5">
+      <img src="assets/photo-5.jpeg" alt="Replace with your photo">
+    </figure>
+
+    <figure class="polaroid polaroid--6">
+      <img src="assets/photo-6.jpeg" alt="Replace with your photo">
+      <figcaption>keep this one</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     4. LITTLE THINGS
+     ============================================================
+     ✏️ EDIT HERE: each <p> inside a .note-card is one small note.
+     Add or remove whole <div class="note-card">...</div> blocks
+     to add or remove notes. Aim for short, specific lines.
+     ============================================================ -->
+<section id="little-things" class="little-things">
+  <h2 class="section-heading">little things</h2>
+
+  <div class="little-things__grid">
+    <div class="note-card">
+      <p>I like the things about you that you probably don't think are worth mentioning.
+The tiny things.
+The almost invisible things.</p>
+    </div>
+    <div class="note-card">
+      <p>I like your random thoughts, your little habits, your expressions, your stories.
+The way you look when you're lost in thought.
+The way you become completely yourself when you're comfortable.</p>
+    </div>
+    <div class="note-card">
+      <p>I like the way you laugh.
+The way you get excited over little things.
+The way you remember things you probably don't realize I noticed.</p>
+    </div>
+    <div class="note-card">
+      <p>You have opinions about everything, and somehow you're rarely insufferable about it.</p>
+    </div>
+    <div class="note-card">
+      <p>The way you say "okay, but hear me out" before every slightly unhinged idea.</p>
+    </div>
+    <div class="note-card">
+      <p>You make ordinary afternoons feel like they're worth remembering.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. "IF YOU WERE..."
+     ============================================================
+     ✏️ EDIT HERE: each <p class="ifyw__line"> is one line, revealed
+     one at a time as she scrolls. Keep the last one pointing at
+     the song — the music player later on picks up from here.
+     ============================================================ -->
+<section id="if-you-were" class="ifyw">
+  <div class="ifyw__inner">
+    <p class="ifyw__line">If you were a color, you'd be the one right before the streetlights come on not quite dusk, not quite evening.</p>
+    <p class="ifyw__line">If you were a place, you'd be somewhere small and slightly too loud, where nobody's in a hurry to leave.</p>
+    <p class="ifyw__line">If you were a sound, you'd be laughing in another room, before I even know what's funny.</p>
+    <p class="ifyw__line">If you were a season, you'd be the first genuinely warm day in March, the one that fools everyone into thinking winter's over.</p>
+    <p class="ifyw__line ifyw__line--song">If you were a song, I think you already know which one.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. THE LETTER
+     ============================================================
+     ✏️ EDIT HERE: this is the big one. Replace the paragraphs
+     inside <div class="letter__body"> with your own words. Leave
+     one blank line between paragraphs (each one is its own <p>).
+     ============================================================ -->
+<section id="letter" class="letter">
+  <div class="letter__paper">
+    <p class="letter__salutation">Afifa,</p>
+
+    <div class="letter__body">
+      <p>I thought about writing something impressive for this. I kept starting sentences and deleting them, because they all sounded like things people write when they don't actually know the person they're writing to.</p>
+
+      <p>So instead, I'll just say what's true. You're one of the people I don't have to perform for. I can be in a bad mood around you, or say something stupid, or go quiet for no reason, and none of it costs me anything with you. That's rarer than people admit.</p>
+
+      <p>I don't know exactly what this year holds for you. But I hope it's full of the kind of days you don't think to photograph, because you're too busy actually living them.</p>
+
+      <p>This isn't a grand gesture. It's just a small, slightly ridiculous website. Because you deserved more than a text that says "happy birthday!!"</p>
+    </div>
+
+    <p class="letter__signoff">Happy birthday, Afifa.<br>Your Andu</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. CANDLE / MAKE A WISH
+     ============================================================
+     No editing needed here unless you want to change the words.
+     The flame-blowing interaction is handled in script.js.
+     ============================================================ -->
+<section id="candle" class="candle-section">
+  <h2 class="section-heading">one more thing</h2>
+  <p class="candle-instruction">tap the flame</p>
+
+  <!-- Simple hand-built candle, drawn with plain SVG shapes -->
+  <div class="candle" id="candleTarget">
+    <svg class="candle__svg" viewBox="0 0 120 220" aria-hidden="true">
+      <!-- candle body -->
+      <rect x="45" y="90" width="30" height="120" rx="4" fill="#E8C4C4"/>
+      <rect x="45" y="90" width="30" height="120" rx="4" fill="url(#waxShade)" opacity="0.5"/>
+      <!-- wick -->
+      <line x1="60" y1="90" x2="60" y2="72" stroke="#3B241C" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- flame group: this whole group gets a CSS class toggled by JS -->
+      <g id="flame" class="flame">
+        <path d="M60 30 C 48 48, 48 66, 60 72 C 72 66, 72 48, 60 30 Z" fill="#D98B4A"/>
+        <path d="M60 44 C 54 54, 54 64, 60 70 C 66 64, 66 54, 60 44 Z" fill="#F2C572"/>
+      </g>
+      <defs>
+        <linearGradient id="waxShade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#3B241C" stop-opacity="0.15"/>
+          <stop offset="50%" stop-color="#3B241C" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#3B241C" stop-opacity="0.15"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <!-- a little puff of smoke, hidden until the candle is blown out -->
+    <div class="smoke" aria-hidden="true"></div>
+  </div>
+
+  <p class="wish-text" id="wishText">Make a wish.</p>
+</section>
+
+<!-- ============================================================
+     8. HIDDEN NOTES
+     ============================================================
+     ✏️ EDIT HERE: each button below is one "sealed note." The
+     text inside data-note is what appears when it's tapped.
+     Add more by copying a whole <button class="note-seal">
+     block and giving it a new data-note.
+     ============================================================ -->
+<section id="hidden-notes" class="hidden-notes">
+  <h2 class="section-heading">a few things I don't say enough</h2>
+  <p class="hidden-notes__instruction">tap each one</p>
+
+  <div class="hidden-notes__grid">
+    <button class="note-seal" type="button" data-note="I notice when you go quiet, even over text.">01</button>
+    <button class="note-seal" type="button" data-note="You're one of the few people I don't have to explain myself to.">02</button>
+    <button class="note-seal" type="button" data-note="I hope today feels as good to you as you make ordinary days feel to everyone around you.">03</button>
+    <button class="note-seal" type="button" data-note="Thank you for being easy to be around. That's not a small thing.">04</button>
+  </div>
+
+  <div class="revealed-note" id="revealedNote" aria-live="polite"></div>
+</section>
+
+<!-- ============================================================
+     9. FINAL SECTION
+     ============================================================
+     ✏️ EDIT HERE: the closing lines and her name at the very end.
+     ============================================================ -->
+<section id="final" class="final">
+  <div class="final__content">
+    <p class="final__line">Keep being you.</p>
+    <p class="final__line">The world is a little better with you in it.</p>
+    <p class="final__name">Happy Birthday, Afifa Mehjabin. ♡</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     MUSIC PLAYER (small, optional, tucked in the corner)
+     ============================================================
+     ✏️ EDIT HERE: put your own audio file at assets/song.mp3
+     (must be a file you own or have the right to use — this
+     template does not include any copyrighted audio). The song
+     title text below is just a label, change it if you like.
+     ============================================================ -->
+<div class="music-player" id="musicPlayer">
+  <button id="musicToggle" class="music-player__button" type="button" aria-label="Play music">
+    <span class="music-player__icon" aria-hidden="true">♪</span>
+  </button>
+  <span class="music-player__label">I Wanna Be Yours</span>
+  <audio id="bgAudio" loop preload="auto">
+    <!-- ✏️ EDIT HERE: point this at your own audio file -->
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
